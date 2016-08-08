@@ -299,37 +299,15 @@
       
         
           
-            <p>##初始化git仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo</div><div class="line">$ git init</div><div class="line">Initialized empty Git repository in E:/project/demo/weijinsuo/.git/</div></pre></td></tr></table></figure></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</div><div class="line"><span class="built_in">console</span>.log(a);</div></pre></td></tr></table></figure>
-<h2 id="查看仓库的状态"><a href="#查看仓库的状态" class="headerlink" title="查看仓库的状态"></a>查看仓库的状态</h2><p>gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo (master)<br>$ git status<br>On branch master</p>
-<p>Initial commit</p>
-<p>Untracked files:<br>  (use “git add <file>…” to include in what will be committed)</file></p>
-<pre><code>css/
-demo.html
-favicon.ico
-fonts/
-img/
-index.html
-js/
-lib/
-</code></pre><p>nothing added to commit but untracked files present (use “git add” to track)</p>
-<p>##将当前目录下所有文件添加到仓库<br>gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo (master)<br>$ git add –all<br>warning: LF will be replaced by CRLF in css/main.css.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in demo.html.<br>The file will have its original line endings in your working directory.<br>warning: LF will be replaced by CRLF in fonts/MiFie-Web-Font.svg.<br>The file will have its original line endings in your working directory.</p>
-<p>##添加仓库后查看状态<br>gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo (master)<br>$ git status<br>On branch master</p>
-<p>Initial commit</p>
-<p>Changes to be committed:<br>  (use “git rm –cached <file>…” to unstage)</file></p>
-<pre><code>new file:   css/main.css
-new file:   demo.html
-new file:   favicon.ico
-new file:   fonts/MiFie-Web-Font.eot
-</code></pre><p>##提交到本地仓库中<br>gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo (master)<br>$ git commit -m ‘第一次提交’<br>[master (root-commit) da28f60] 第一次提交<br>warning: LF will be replaced by CRLF in css/main.css.<br>The file will have its original line endings in your working directory.</p>
-<p>##在github上创建一个仓库，获取地址<br><a href="https://github.com/FreedomPanda/weijinsuo.git" target="_blank" rel="external">https://github.com/FreedomPanda/weijinsuo.git</a></p>
-<p>##添加仓库上传的远程地址<br>gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo (master)<br>$ git remote add origin <a href="https://github.com/FreedomPanda/weijinsuo.git" target="_blank" rel="external">https://github.com/FreedomPanda/weijinsuo.git</a></p>
-<p>##将仓库的数据推送到远程github上</p>
-<p>gao@DESKTOP-O0IOHNI MINGW64 /e/project/demo/weijinsuo (master)</p>
-<p>$ git push -u origin master<br>Counting objects: 49, done.<br>Delta compression using up to 4 threads.<br>Compressing objects: 100% (47/47), done.<br>Writing objects: 100% (49/49), 1.42 MiB | 118.00 KiB/s, done.<br>Total 49 (delta 3), reused 0 (delta 0)<br>To <a href="https://github.com/FreedomPanda/weijinsuo.git" target="_blank" rel="external">https://github.com/FreedomPanda/weijinsuo.git</a></p>
-<ul>
-<li>[new branch]      master -&gt; master<br>Branch master set up to track remote branch master from origin.</li>
-</ul>
+            <p>##初始化git仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line"></div><div class="line">Initialized empty Git repository in E:/project/demo/weijinsuo/.git/</div></pre></td></tr></table></figure></p>
+<h2 id="查看仓库的状态"><a href="#查看仓库的状态" class="headerlink" title="查看仓库的状态"></a>查看仓库的状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">$ git status</div><div class="line"></div><div class="line">On branch master</div><div class="line">Initial commit</div><div class="line">Untracked files:</div><div class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</div><div class="line">        css/</div><div class="line">        demo.html</div><div class="line">        favicon.ico</div><div class="line">        fonts/</div><div class="line">        img/</div><div class="line">        index.html</div><div class="line">        js/</div><div class="line">        lib/</div><div class="line">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</div></pre></td></tr></table></figure>
+<p>##将当前目录下所有文件添加到仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ git add --all</div><div class="line"></div><div class="line">warning: LF will be replaced by CRLF in css/main.css.</div><div class="line">The file will have its original line endings in your working directory.</div><div class="line">warning: LF will be replaced by CRLF in demo.html.</div><div class="line">The file will have its original line endings in your working directory.</div><div class="line">warning: LF will be replaced by CRLF in fonts/MiFie-Web-Font.svg.</div><div class="line">The file will have its original line endings in your working directory.</div></pre></td></tr></table></figure></p>
+<p>##添加仓库后查看状态<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$ git status</div><div class="line"></div><div class="line">On branch master</div><div class="line">Initial commit</div><div class="line">Changes to be committed:</div><div class="line">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</div><div class="line"></div><div class="line">        new file:   css/main.css</div><div class="line">        new file:   demo.html</div><div class="line">        new file:   favicon.ico</div><div class="line">        new file:   fonts/MiFie-Web-Font.eot</div></pre></td></tr></table></figure></p>
+<p>##提交到本地仓库中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git commit -m &apos;第一次提交&apos;</div><div class="line"></div><div class="line">[master (root-commit) da28f60] 第一次提交</div><div class="line">warning: LF will be replaced by CRLF in css/main.css.</div><div class="line">The file will have its original line endings in your working directory.</div></pre></td></tr></table></figure></p>
+<p>##在github上创建一个仓库，获取地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/FreedomPanda/weijinsuo.git</div></pre></td></tr></table></figure></p>
+<p>##添加仓库上传的远程地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git remote add origin https://github.com/FreedomPanda/weijinsuo.git</div></pre></td></tr></table></figure></p>
+<p>##将仓库的数据推送到远程github上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master</div><div class="line"></div><div class="line">Counting objects: 49, done.</div><div class="line">Delta compression using up to 4 threads.</div><div class="line">Compressing objects: 100% (47/47), done.</div><div class="line">Writing objects: 100% (49/49), 1.42 MiB | 118.00 KiB/s, done.</div><div class="line">Total 49 (delta 3), reused 0 (delta 0)</div><div class="line">To https://github.com/FreedomPanda/weijinsuo.git</div><div class="line"> * [new branch]      master -&gt; master</div><div class="line">Branch master set up to track remote branch master from origin.</div></pre></td></tr></table></figure></p>
+<p>##将仓库数据保存到本地<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git pull orgin master</div></pre></td></tr></table></figure></p>
 
           
         
@@ -576,123 +554,6 @@ new file:   fonts/MiFie-Web-Font.eot
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/06/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-06T09:15:48+08:00" content="2016-08-06">
-              2016-08-06
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line"></div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line"></div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div><div class="line">+ b</div><div class="line">+ b</div><div class="line">+ b</div><div class="line"></div><div class="line">- c</div><div class="line">- c</div><div class="line"></div><div class="line">1. b</div><div class="line">2. 3</div><div class="line">3. 6</div><div class="line">7. 7</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p><img src="/img/ariya.jpg" alt="&#39;img&#39;"><br>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<ul>
-<li>b</li>
-<li>b</li>
-<li>b</li>
-</ul>
-<ul>
-<li>c</li>
-<li>c</li>
-</ul>
-<ol>
-<li>b</li>
-<li>3</li>
-<li>6</li>
-<li>7</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -734,7 +595,7 @@ new file:   fonts/MiFie-Web-Font.eot
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
